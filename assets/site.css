@@ -1,10 +1,13 @@
 html { background:url('virtual_bg.jpg') bottom center #000; color: #fff; min-height:100vh; }
 body { margin:0; padding:0; }
+img { max-width:100%; height:auto; }
+
+.site-title { text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
 
 /* Grid */
-.row {width:100%; flex-flow:row; }
-.row-container {flex-flow:row; padding-left:0; padding-right:0; max-width:90vw; margin:0 auto;}
-.grid {display:flex; flex-flow:row wrap; list-style:none; padding:0; clear:both; }
+.row { width:100%; flex-flow:row; }
+.row-container { flex-flow:row; padding-left:0; padding-right:0; max-width:90vw; margin:0 auto;}
+.grid { display:flex; flex-flow:row wrap; list-style:none; padding:0; clear:both; }
 .grid-xs-2 > * { width:50%; }
 .grid-xs-3 > * { width:33.33%; }
 .grid-xs-4 > * { width:25%; }

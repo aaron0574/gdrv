@@ -4,8 +4,9 @@ img { max-width:100%; height:auto; }
 
 .site-title { text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
 .site-subtitle { text-transform:uppercase; font-size:0.8rem; font-weight:bold; font-style:italic; color:#808080; }
-  .site-subtitle span { display:block; color:#f00; font-size:1.25em; }
-
+  .site-subtitle span { display:block; color:#f00; font-size:2.25em; }
+  .site-subtitle .year { color:#fff; }
+  
 /* Grid */
 .row { width:100%; flex-flow:row; }
 .row-container { flex-flow:row; padding-left:0; padding-right:0; max-width:90vw; margin:0 auto;}

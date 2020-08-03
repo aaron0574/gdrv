@@ -4,9 +4,36 @@ img { max-width:100%; height:auto; }
 
 .site-title { text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
 .site-subtitle { text-transform:uppercase; font-size:0.8rem; font-weight:bold; font-style:italic; color:#808080; }
-  .site-subtitle span { display:block; color:#f00; font-size:2.25em; }
+  .site-subtitle .title { display:block; color:#f00; font-size:2.25em; background:-webkit-linear-gradient(#8A1B25, #DB3343); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
   .site-subtitle .year { color:#fff; }
-  
+
+.site-nav { font-size:1.75rem; color:#727272; }
+  .site-nav ul { margin:0; padding:0; }
+  .site-nav li { list-style:none; }
+
+/* Alignment */
+.text-left {text-align:left;}
+.text-center {text-align:center;}
+.text-right {text-align:right;}
+.float-left {float:left;}
+.float-right {float:right;}
+.block-center {max-width:65rem; margin-left:auto; margin-right:auto;}
+.block-center-wide { max-width:90rem; }
+.justify-start { justify-content:flex-start; }
+.justify-center { justify-content:center;}
+.justify-end { justify-content:flex-end;}
+.justify-between { justify-content:space-between;}
+.justify-around { justify-content:space-around;}
+.justify-self-start { justify-self:flex-start;}
+.justify-self-center { justify-self:center;}
+.justify-self-end { justify-self:flex-end;}
+.align-start { align-items:flex-start; }
+.align-center { align-items:center;}
+.align-end { align-items:flex-end;}
+.align-self-start { align-self:flex-start; }
+.align-self-center { align-self:center; }
+.align-self-end { align-self:flex-end; }
+
 /* Grid */
 .row { width:100%; flex-flow:row; }
 .row-container { flex-flow:row; padding-left:0; padding-right:0; max-width:90vw; margin:0 auto;}

@@ -185,7 +185,7 @@ h4, h5, h6 {}
 }
 
 @supports (display:grid) {
-  .grid { display:grid; grid-gap:var(--grid-gap); }
+  .grid { display:grid; grid-gap:2rem; }
   .grid > * { width:auto; }
   .grid.no-gap { grid-gap:0; }
   .grid-xs-2 { grid-template-columns:repeat(2, minmax(0,50%)); }

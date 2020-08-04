@@ -30,15 +30,16 @@ h4, h5, h6 {}
 .article { margin-bottom:2em; }
   .article img { border:1px solid #727272; }
 
-.video-item { text-align:center; }
+.video-item { text-align:center; position:relative; }
   .video-item img { border:1px solid #727272; }
+  .video-item.new::before { content:'New!'; display:block; text-transform:uppercase; background-color:#AAC980; padding:0.5rem; position:absolute; top:1em; left:0; }
 
 /* Dashboard */
 .checklist-list li { color:#727272; position:relative; margin-bottom:0.5em; }
   .checklist-list li.checked { color:#fff; }
   .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-1.75em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
 
-.brand-list li { padding:2em; }
+.brand-list li { padding:0 1em; }
 
 /* Model */
 .model-header { border-bottom:1px solid #ccc; }

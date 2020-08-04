@@ -1,6 +1,6 @@
 html { background:url('virtual_bg.jpg') bottom center no-repeat #000; color:#fff; min-height:100vh; }
 body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; }
-img { max-width:100%; height:auto; border:1px solid #727272; }
+img { max-width:100%; height:auto; }
 p, li { color:#9f9f9f; }
 a { color:#CC5858; text-decoration:none; }
 a:hover, a:focus { text-decoration:underline; }
@@ -25,8 +25,13 @@ h4, h5, h6 {}
 /* General */
 .list-inline li { list-style:none; display:inline-block; }
 .no-bullets li { list-style:none; }
+.no-border { border:none; }
 
 .article { margin-bottom:2em; }
+  .article img { border:1px solid #727272; }
+
+.video-item { text-align:center; }
+  .video-item img { border:1px solid #727272; }
 
 /* Dashboard */
 .checklist-list li { color:#727272; position:relative; margin-bottom:0.5em; }
@@ -34,6 +39,10 @@ h4, h5, h6 {}
   .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-1.75em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
 
 .brand-list li { padding:2em; }
+
+/* Model */
+.model-header { border-bottom:1px solid #ccc; }
+.model-logo { max-width:25rem; }
 
 /* Alignment */
 .text-left {text-align:left;}

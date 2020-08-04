@@ -1,10 +1,11 @@
 html { background:url('virtual_bg.jpg') bottom center #000; color: #fff; min-height:100vh; }
-body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; }
 img { max-width:100%; height:auto; }
-a { color:#CC5858; }
+a { color:#CC5858; text-decoration:none; }
+a:hover, a:focus { text-decoration:underline; }
 
 .site-title a { display:block; text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
-.site-subtitle { text-transform:uppercase; font-size:0.8rem; font-weight:bold; font-style:italic; color:#808080; }
+.site-subtitle { text-transform:uppercase; font-size:0.8rem; font-style:italic; color:#808080; }
   .site-subtitle span { color:#fff; display:block; font-size:2.25em; }
   .site-subtitle span span { display:inline; color:#f00; font-size:1em; background:-webkit-linear-gradient(#DB3343, #8A1B25); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 
@@ -20,10 +21,14 @@ h4, h5, h6 {}
 
 .section-title { color:#CC5858; }
 
+/* General */
+.list-inline li { list-style:none; display:inline-block; }
+.no-bullets li { list-style:none; }
+
 /* Dashboard */
 .checklist-list li { color:#727272; position:relative; }
   .checklist-list li.checked { color:#fff; }
-  .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-1em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
+  .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-2em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
 
 /* Alignment */
 .text-left {text-align:left;}

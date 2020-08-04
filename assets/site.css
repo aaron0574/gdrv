@@ -4,8 +4,8 @@ img { max-width:100%; height:auto; }
 
 .site-title { text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
 .site-subtitle { text-transform:uppercase; font-size:0.8rem; font-weight:bold; font-style:italic; color:#808080; }
-  .site-subtitle .title { display:block; color:#f00; font-size:2.25em; background:-webkit-linear-gradient(#8A1B25, #DB3343); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-  .site-subtitle .year { color:#fff; }
+  .site-subtitle span { color:#fff; display:block; }
+  .site-subtitle span span { display:inline; color:#f00; font-size:2.25em; background:-webkit-linear-gradient(#DB3343, #8A1B25); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 
 .site-nav { font-size:1.75rem; color:#727272; }
   .site-nav ul { margin:0; padding:0; }

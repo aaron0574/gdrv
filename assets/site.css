@@ -1,4 +1,4 @@
-html { background:url('virtual_bg.jpg') bottom center #000; color: #fff; min-height:100vh; }
+html { background:url('virtual_bg.jpg') bottom center no-repeat #000; color:#fff; min-height:100vh; }
 body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; }
 img { max-width:100%; height:auto; }
 a { color:#CC5858; text-decoration:none; }
@@ -25,10 +25,14 @@ h4, h5, h6 {}
 .list-inline li { list-style:none; display:inline-block; }
 .no-bullets li { list-style:none; }
 
+.article { margin-bottom:2em; }
+
 /* Dashboard */
-.checklist-list li { color:#727272; position:relative; }
+.checklist-list li { color:#727272; position:relative; margin-bottom:0.5em; }
   .checklist-list li.checked { color:#fff; }
-  .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-2em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
+  .checklist-list li.checked::before { content:''; display:block; position:absolute; left:-1.75em; top:0; width:1.25em; height:1.25em; background:url('check-icn.svg') center center no-repeat; background-size:contain; }
+
+.brand-list li { padding:2em; }
 
 /* Alignment */
 .text-left {text-align:left;}

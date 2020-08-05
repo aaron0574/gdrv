@@ -1,20 +1,39 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+body { line-height:1; }
+ol, ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }
+table { border-collapse:collapse; border-spacing:0; }
+
+/* General */
 html { background:url('virtual_bg.jpg') bottom center no-repeat #000; color:#fff; min-height:100vh; }
-body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight:bold; }
+body { margin:0; padding:0; font:1em/1.6em 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 img { max-width:100%; height:auto; }
 p, li { color:#9f9f9f; }
 a { color:#CC5858; text-decoration:none; }
 a:hover, a:focus { text-decoration:underline; }
 
 .site-title a { display:block; text-indent:-9999vw; background:url('gdrv-logo.png') center center no-repeat; background-size:contain; width:400px; height:125px; }
-.site-subtitle { text-transform:uppercase; font-size:0.8rem; font-style:italic; color:#808080; }
+.site-subtitle { text-transform:uppercase; font-size:0.9rem; font-style:italic; color:#808080; }
   .site-subtitle span { color:#fff; display:block; font-size:2.25em; }
   .site-subtitle span span { display:inline; color:#f00; font-size:1em; background:-webkit-linear-gradient(#DB3343, #8A1B25); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
 
 .site-nav { font-size:1.75rem; color:#727272; }
   .site-nav ul { margin:0; padding:0; }
   .site-nav li { list-style:none; }
+  .list-inline li { list-style:none; display:inline-block; }
+  .no-bullets li { list-style:none; }
+  .no-border { border:none; }
+
+.article { margin-bottom:2em; }
+  .article img { border:1px solid #727272; }
 
 /* Headings */
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
 h1 {}
 h2 {}
 h3 {}
@@ -22,17 +41,8 @@ h4, h5, h6 {}
 
 .section-title { color:#CC5858; }
 
-/* General */
-.list-inline li { list-style:none; display:inline-block; }
-.no-bullets li { list-style:none; }
-.no-border { border:none; }
-
-.article { margin-bottom:2em; }
-  .article img { border:1px solid #727272; }
-
-.video-item { text-align:center; position:relative; }
-  .video-item img { border:1px solid #727272; }
-  .video-item.new::before { content:'New!'; display:block; text-transform:uppercase; background-color:#AAC980; padding:0.5rem; position:absolute; top:1em; left:0; }
+/* Home */
+.home .page-body { width:40rem; margin:0 auto; text-align:center; }
 
 /* Dashboard */
 .checklist-list li { color:#727272; position:relative; margin-bottom:0.5em; }
@@ -44,6 +54,11 @@ h4, h5, h6 {}
 /* Model */
 .model-header { border-bottom:1px solid #ccc; }
 .model-logo { max-width:25rem; }
+.model-buttons { margin-left:3em; }
+
+.video-item { text-align:center; position:relative; }
+  .video-item img { border:1px solid #727272; }
+  .video-item.new::before { content:'New!'; display:block; font-size:0.9em; font-style:italic; text-transform:uppercase; color:#385031; background-color:#AAC980; padding:0.5rem; position:absolute; top:1em; left:0; }
 
 /* Alignment */
 .text-left {text-align:left;}

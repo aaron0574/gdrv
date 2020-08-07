@@ -12,3 +12,15 @@ $(".access-input").keyup(function () {
       $(this).blur();
   }
 });
+
+var $headerHeight = $(".page-header").outerHeight();
+if ($(window).width() < 768) {
+  $(".page-body").css('padding-top', $headerHeight + 32 );
+}
+$(window).on('resize', function(){
+  if ($(window).width() < 768) {
+    $(".page-body").css('padding-top', $headerHeight + 32 );
+  } else {
+    $(".page-body").css('padding-top', 0 );
+  }
+});
